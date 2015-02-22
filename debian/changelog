@@ -1,0 +1,15 @@
+keepasshttp (1.8.4) trusty; urgency=medium
+
+  * Patch from previous debian package release merged upstream.
+  * Merge new upstream release.
+
+    * Improved URL matching.
+
+ -- David Lechner <david@lechnology.com>  Sun, 22 Feb 2015 15:03:38 -0600
+
+keepasshttp (1.0.8.3-1) trusty; urgency=low
+
+  * Initial release 
+  * Fixes compatibility with keepass2-plugin-application-indicator
+
+ -- David Lechner <david@lechnology.com>  Sat, 02 Aug 2014 10:35:40 -0500

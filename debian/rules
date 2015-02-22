@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --with cli
+
+override_dh_auto_clean:
+	xbuild /target:Clean /property:Configuration=Release KeePassHttp.sln
+	dh_auto_clean
+
+override_dh_auto_build:
+	xbuild /property:Configuration=Release KeePassHttp.sln

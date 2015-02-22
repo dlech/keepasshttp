@@ -1,0 +1,2 @@
+KeePassHttp/bin/Release/KeePassHttp.dll usr/lib/keepass2/plugins/keepasshttp
+KeePassHttp/bin/Release/Newtonsoft.Json.dll usr/lib/keepass2/plugins/keepasshttp

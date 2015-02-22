@@ -1,0 +1,22 @@
+Source: keepasshttp
+Section: utils
+Priority: optional
+Maintainer: David Lechner <david@lechnology.com>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: cli-common-dev (>= 0.8),
+                     keepass2
+Standards-Version: 3.9.5
+Homepage: https://github.com/pfn/keepasshttp
+Vcs-Git: git://github.com/dlech/keepasshttp.git
+Vcs-Browser: https://github.com/dlech/keepasshttp
+
+Package: keepass2-plugin-keepasshttp
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KeePass 2.x plugin to expose password entries securely over HTTP
+ KeePassHttp is a plugin for KeePass 2.x and provides a secure means of
+ exposing KeePass entries via HTTP for clients to consume using 256bit AES/CBC
+ encryption.
+ .
+ This plugin is primarily intended for use with PassIFox for Mozilla Firefox
+ and chromeIPass for Google Chrome.
