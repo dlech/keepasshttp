@@ -12,7 +12,8 @@ Vcs-Browser: https://github.com/dlech/keepasshttp
 
 Package: keepass2-plugin-keepasshttp
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmono-system-xml-linq4.0-cil, libmono-system-data-datasetextensions4.0-cil, libmono-system-runtime-serialization4.0-cil, libnewtonsoft-json5.0-cil
+Recommends: keepass2
 Description: KeePass 2.x plugin to expose password entries securely over HTTP
  KeePassHttp is a plugin for KeePass 2.x and provides a secure means of
  exposing KeePass entries via HTTP for clients to consume using 256bit AES/CBC
