@@ -1,3 +1,9 @@
+keepasshttp (1.8.4+1) trusty; urgency=medium
+
+  * Use system Newtonsoft.Json library.
+
+ -- David Lechner <david@lechnology.com>  Sun, 24 Jan 2016 18:51:48 -0600
+
 keepasshttp (1.8.4) trusty; urgency=medium
 
   * Patch from previous debian package release merged upstream.
