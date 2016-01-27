@@ -1,3 +1,9 @@
+keepasshttp (1.8.4+2) trusty; urgency=medium
+
+  * Don't build against .NET 3.5
+
+ -- David Lechner <david@lechnology.com>  Wed, 27 Jan 2016 14:35:18 -0600
+
 keepasshttp (1.8.4+1) trusty; urgency=medium
 
   * Use system Newtonsoft.Json library.
