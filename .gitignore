@@ -7,4 +7,5 @@ create-plgx.bat
 *.cer
 *.pvk
 *.csproj.user
+*.userprefs
 /KeePassHttp/KeePassHttp.dll
