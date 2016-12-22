@@ -13,8 +13,10 @@ namespace KeePassHttp
         const string SearchInAllOpenedDatabasesKey = "KeePassHttp_SearchInAllOpenedDatabases";
         const string MatchSchemesKey = "KeePassHttp_MatchSchemes";
         const string ReturnStringFieldsKey = "KeePassHttp_ReturnStringFields";
+        const string ReturnStringFieldsWithKphOnlyKey = "KeePassHttp_ReturnStringFieldsWithKphOnly";
         const string SortResultByUsernameKey = "KeePassHttp_SortResultByUsername";
         const string ListenerPortKey = "KeePassHttp_ListenerPort";
+        const string ListenerHostKey = "KeePassHttp_ListenerHost";
 
         public ConfigOpt(AceCustomConfig config)
         {
@@ -69,6 +71,12 @@ namespace KeePassHttp
             set { _config.SetBool(ReturnStringFieldsKey, value); }
         }
 
+        public bool ReturnStringFieldsWithKphOnly
+        {
+            get { return _config.GetBool(ReturnStringFieldsWithKphOnlyKey, true); }
+            set { _config.SetBool(ReturnStringFieldsWithKphOnlyKey, value); }
+        }
+
         public bool SortResultByUsername
         {
             get { return _config.GetBool(SortResultByUsernameKey, true); }
@@ -79,6 +87,12 @@ namespace KeePassHttp
         {
             get { return _config.GetLong(ListenerPortKey, KeePassHttpExt.DEFAULT_PORT); }
             set { _config.SetLong(ListenerPortKey, value); }
+        }
+
+        public string ListenerHost
+        {
+            get { return _config.GetString(ListenerHostKey, KeePassHttpExt.DEFAULT_HOST); }
+            set { _config.SetString(ListenerHostKey, value); }
         }
     }
 }

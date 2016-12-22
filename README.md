@@ -22,11 +22,20 @@ This plugin is primarily intended for use with [PassIFox for Mozilla Firefox](ht
  * For Linux: installed mono
  * For Mac: installed mono | it seems to fully support KeePassHttp, but we cannot test it
 
-## Installation
+## Windows installation using Chocolatey
+
+ 1. Install using [Chocolatey](https://chocolatey.org/) with `choco install keepass-keepasshttp`
+ 2. Restart KeePass if it is currently running to load the plugin
+
+## Non-Windows / Manual Windows installation
+
  1. Download [KeePassHttp](https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx)
  2. Copy it into the KeePass directory
- 3. On linux systems you maybe need to install mono-complete: `$ apt-get install mono-complete` (in Debian it should be enough to install the packages libmono-system-runtime-serialization4.0-cil and libmono-posix2.0-cil)
- 4. Restart KeePass
+	* default directory in Ubuntu14.04: /usr/lib/keepass2/
+	* default directory in Arch: /usr/share/keepass
+ 3. Set chmod 644 on file `KeePassHttp.plgx`
+ 4. On linux systems you maybe need to install mono-complete: `$ apt-get install mono-complete` (in Debian it should be enough to install the packages libmono-system-runtime-serialization4.0-cil and libmono-posix2.0-cil)
+ 5. Restart KeePass
 
 ### KeePassHttp on Linux and Mac
 
