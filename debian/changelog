@@ -1,3 +1,17 @@
+keepasshttp (1.8.4.1) trusty; urgency=medium
+
+  [ frankhommers ]
+  * Ability to change listener host.
+
+  [ Aleksandr Bogdanov ]
+  * Fixing non-free icon with a free one
+
+  [ Bernd Bestel ]
+  * Make the limitation that only advanced string fields starting with "KPH: "
+    optional
+
+ -- David Lechner <david@lechnology.com>  Thu, 22 Dec 2016 12:49:14 -0600
+
 keepasshttp (1.8.4+2) trusty; urgency=medium
 
   * Don't build against .NET 3.5
