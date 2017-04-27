@@ -234,6 +234,23 @@ namespace KeePassHttp {
                 result = from e in result where filterSchemes(e.entry) select e;
             }
 
+            Func<PwEntry, bool> hideExpired = delegate(PwEntry e)
+            {
+                DateTime dtNow = DateTime.UtcNow;
+
+                if(e.Expires && (e.ExpiryTime <= dtNow))
+                {
+                    return false;
+                }
+
+                return true;
+            };
+
+            if (configOpt.HideExpired)
+            {
+                result = from e in result where hideExpired(e.entry) select e;
+            }
+
             return result;
         }
 
@@ -350,7 +367,9 @@ namespace KeePassHttp {
                                  orderby e.entry.UsageCount ascending 
                                  select e).ToList();
 
-                    ulong lowestDistance = itemsList[0].entry.UsageCount;
+                    ulong lowestDistance = itemsList.Count > 0 ?
+                        itemsList[0].entry.UsageCount :
+                        0;
 
                     itemsList = (from e in itemsList
                                  where e.entry.UsageCount == lowestDistance
