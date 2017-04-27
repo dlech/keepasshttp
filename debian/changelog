@@ -1,3 +1,36 @@
+keepasshttp (1.8.4.2) trusty; urgency=medium
+
+  [ iamquan ]
+  * Tips to run KeePassHttp on lastest KeePass 2.31
+
+  [ Perry Nguyen ]
+  * Update update-version.txt
+
+  [ Ken Dale ]
+  * Add logo to match keepasshttp\KeePassHttp\Resources\earth_lock.png
+
+  [ Vladimir Serykh ]
+  * Fixed exception System.ArgumentOutOfRangeException: Index was out of range
+
+  [ Václav Valíček ]
+  * Firts steps in docs
+  * Another example json requests and responses
+  * added set-login and get-logins-count json examples
+  * get-logins-count: no SortSelection
+
+  [ Stephen Schrauger ]
+  * adds feature to prevent returning expired entries
+  * fixes expire handler
+  * plugin compiled with new expire check feature
+  * removes plgx from branch
+  * fixes indent (change tab to space)
+
+  [ Perry Nguyen ]
+  * 1.8.4.2
+
+
+ -- David Lechner <david@lechnology.com>  Thu, 27 Apr 2017 11:12:31 -0500
+
 keepasshttp (1.8.4.1) trusty; urgency=medium
 
   [ frankhommers ]
